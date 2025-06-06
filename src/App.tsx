@@ -1,13 +1,21 @@
+import { AuthProvider, FirestoreProvider, useFirebaseApp } from "reactfire"
 import { Button } from "./components/ui/button"
+import { getFirestore } from "firebase/firestore"
+import { getAuth } from "firebase/auth"
 
 
 function App() {
 
+  const app = useFirebaseApp()
+  const db = getFirestore(app)
+  const auth = getAuth(app)
+
   return (
-    <>
-      <h1>Hola Mundo</h1>
-      <Button>Iniciar Sesión</Button>
-    </>
+    <FirestoreProvider sdk={db}>
+      <AuthProvider sdk={auth}>
+        
+      </AuthProvider>
+    </FirestoreProvider>
   )
 }
 
