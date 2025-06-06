@@ -2,6 +2,7 @@ import { AuthProvider, FirestoreProvider, StorageProvider, useFirebaseApp } from
 import { getFirestore } from "firebase/firestore"
 import { getAuth } from "firebase/auth"
 import { getStorage } from "firebase/storage"
+import RootLayout from "./layout/root-layout"
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
     <FirestoreProvider sdk={db}>
       <AuthProvider sdk={auth}>
         <StorageProvider sdk={stogare}>
-
+          <RootLayout/>
         </StorageProvider>
       </AuthProvider>
     </FirestoreProvider>
