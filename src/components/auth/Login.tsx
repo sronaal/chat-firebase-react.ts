@@ -36,7 +36,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className='w-96 p-5'> 
       <Card className='bg-white '>
         <CardHeader>
           <CardTitle>Iniciar Sesión</CardTitle>
