@@ -19,6 +19,11 @@ export const registerFormSchema = z.object({
   confirmPassword: z.string().min(6, 'La contraseña debe tener minimo 6 caracteres')
 
 })
-  .refine((data) => data.password === data.confirmPassword, {
+.refine((data) => data.password === data.confirmPassword, {
     "message": "Las contraseñas deben ser iguales"
-  })
+})
+
+export const searchFormSchema = z.object({
+  email: z.string().email('Ingrese un correo electronico valido')
+})
+
