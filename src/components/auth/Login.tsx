@@ -35,7 +35,7 @@ const Login = () => {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white p-8 ">
       <h1>Iniciar Sesión</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -60,7 +60,7 @@ const Login = () => {
               <FormItem>
                 <FormLabel>Contraseña</FormLabel>
                 <FormControl>
-                  <Input placeholder="*********" {...field} />
+                  <Input type='password' placeholder="*********" {...field} />
                 </FormControl>  
                 <FormMessage />
               </FormItem>              
