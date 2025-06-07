@@ -16,11 +16,13 @@
     "@tailwindcss/vite": "^4.1.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "emoji-picker-react": "^4.12.2",
     "firebase": "^9.23.0",
     "lucide-react": "^0.513.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.57.0",
+    "react-icons": "^5.5.0",
     "reactfire": "^4.2.3",
     "tailwind-merge": "^3.3.0",
     "zod": "^3.25.56"

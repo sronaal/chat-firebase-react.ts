@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 
 function Profile() {
   return (
-    <div className='p-4 text-center'>
+    <div className='p-4 text-center border-l border-gray-300'>
       <img
         src="https://randomuser.me/api/portraits/men/44.jpg" alt="Foto de perfil"
         className="rounded-md mb-4 mx-auto w-24 h-24"

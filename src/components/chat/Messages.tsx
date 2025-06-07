@@ -1,10 +1,20 @@
-
+import MessagesChat from "./MessagesChat"
+import MessagesFooter from "./MessagesFooter"
+import MessagesHeader from "./MessagesHeader"
 
 function Messages() {
   return (
-    <div className='bg-pink-100'>
-      <h1>Messages</h1>
-    </div>
+    <article className='grid grid-rows-[auto_3fr_auto] h-screen'>
+      {/* Header */}
+      <MessagesHeader />
+
+      {/* Chat Content */}
+      <MessagesChat />
+
+      {/* Footer Input */}
+      <MessagesFooter />
+
+    </article>
   )
 }
 

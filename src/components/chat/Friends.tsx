@@ -32,7 +32,7 @@ const Friends = () => {
   }, [])
 
   return (
-    <div className='grid grid-rows-[auto_1fr] h-screen'>
+    <div className='grid grid-rows-[auto_1fr] h-screen border-r border-gray-300'>
       <section className='border-b border-b-gray-300 p-4'>
         <h2 className='text-xl font-bold text-gray-800 mb-4'>Chats</h2>
         <FriendSearch />
